@@ -39,4 +39,4 @@ if __name__ == "__main__":
     )
 
     # Start the web server
-    merakicloudsimulator.run(host=WEB_SERVER_BIND_IP, port=WEB_SERVER_BIND_PORT, threaded=True, debug=False)
+    merakicloudsimulator.run(host=WEB_SERVER_BIND_IP, port=WEB_SERVER_BIND_PORT, threaded=True, debug=False, ssl_context=('adhoc'))

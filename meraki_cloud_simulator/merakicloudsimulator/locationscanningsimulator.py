@@ -287,5 +287,5 @@ def post_json(ap):
     global server_url
     global ap_data
 
-    requests.post(server_url, json=ap_data[ap])  # post to listener
+    requests.post(server_url, json=ap_data[ap], verify=False)  # post to listener
     print(ap_data[ap])
